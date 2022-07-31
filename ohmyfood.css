@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    font-family: 'Shrikhand', cursive;
+    text-align: center;
+    box-shadow: 0px 3px 8px darkgrey;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    position: relative;
+    font-size: 20px;
+
+
+}
+
+main .ville {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    font-weight: bold;
+    gap: 10px;
+
+}
+
+main .ville i {
+    font-size: 22px;
+}
+
+.explorer {
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.explorer button {
+    border-radius: 30px;
+    border-color: white;
+    color: white;
+    background-image: linear-gradient(to top, #9356DC, #FF79DA);
+    width: 300px;
+    font-size: 24px;
+    padding: 11px;
+
+
+}
+
+.explorer button:hover {
+    transform: scale(1.1);
+}
+
+.explorer h2 {
+    margin-top: 40px;
+    font-size: 60px;
+}
+
+.explorer p {
+    font-size: 30px;
+}
+
+.listefiltres h2 {
+    padding-left: 90px;
+    font-size: 40px;
+}
+
+.filtres {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+    flex-wrap: wrap;
+
+
+}
+
+.filtres div {
+    display: flex;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #f6f6f6;
+    box-shadow: 1px 1px 10px -3px;
+}
+
+.nombres {
+    border-radius: 50%;
+    background-color: #9356dc;
+    color: white;
+    margin-left: -25px;
+    margin-right: 10px;
+    padding: 8px;
+}
+
+
+
+.fa-solid.fa-mobile-screen-button {
+    color: darkgray;
+    padding-top: 23px;
+    padding-right: 5px;
+    font-size: 20px;
+}
+
+.fa-solid.fa-list {
+    color: darkgray;
+    padding-top: 23px;
+    padding-right: 5px;
+    font-size: 20px;
+}
+
+.fa-solid.fa-store {
+    color: darkgray;
+    padding-top: 23px;
+    padding-right: 5px;
+    font-size: 20px;
+}
