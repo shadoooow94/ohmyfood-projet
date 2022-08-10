@@ -134,7 +134,7 @@ main .ville i {
 }
 
 .fa-solid.fa-store {
-    color: darkgray;
+    color: #9356;
     padding-top: 20px;
     padding-right: 5px;
     font-size: 20px;
@@ -192,17 +192,17 @@ main .ville i {
     margin-top: 25px; 
      
 }
-.fa-regular.fa-heart{
+.fas.fa-heart{
     
     position: absolute;
     right: 100px;
     margin-top: -70px;
     font-size: 30px;
-   border: 0;
+   
 
      
 }
-.likeicon{
+.likeicon:hover{
     
     background:linear-gradient( #9356DC, #FF79DA); 
     -webkit-text-fill-color: transparent;
@@ -212,7 +212,7 @@ main .ville i {
 }
 
 
-.fa-regular.fa-heart:hover{
+.fas.fa-heart:hover{
     
     transform: scale(1.05);
     cursor: pointer;
@@ -357,7 +357,7 @@ main .ville i {
     }
     
     .fa-solid.fa-store {
-        color: darkgray;
+        color: #9356dc;
        
         font-size: 20px;
     }
@@ -395,7 +395,7 @@ main .ville i {
     margin-top: 25px; 
      
 }
-.fa-regular.fa-heart{
+.fas.fa-heart{
     
     color: black;
     right: 68px;
@@ -404,13 +404,13 @@ main .ville i {
     
     
 }
-.fa-regular.fa-heart{
+.fas.fa-heart{
     
     background-color:linear-gradient(to top, #9356DC, #FF79DA); 
     background-clip: text;
     
 }
-.fa-regular.fa-heart:hover{
+.fas.fa-heart:hover{
    
     transform: scale(1.05);
     cursor: pointer;
