@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
+*{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+    
+}
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -34,6 +43,7 @@ main .ville {
 
 main .ville i {
     font-size: 22px;
+    color:black;
 }
 
 .explorer {
@@ -61,6 +71,7 @@ main .ville i {
 .explorer h2 {
     
     font-size: 45px;
+
 }
 
 .explorer p {
@@ -187,7 +198,7 @@ main .ville i {
     right: 100px;
     margin-top: -70px;
     font-size: 30px;
-   
+   border: 0;
 
      
 }
@@ -259,6 +270,8 @@ main .ville i {
         background-image: linear-gradient(to top, #9356DC, #FF79DA);
         font-size: 20px; 
         margin-bottom: 40px;
+        border: 0;
+        margin-top: 20px;
     
     
     }
@@ -301,7 +314,7 @@ main .ville i {
         width: 300px;
         
     }
-    .filtres div:hover{
+    .filtres i:hover{
         color: #9356DC;
         
     }
@@ -374,19 +387,25 @@ main .ville i {
 }
 .fa-regular.fa-heart{
     
-    
+    color: black;
     right: 68px;
     margin-top: -50px;
     font-size: 30px;
+    
     
 }
 .fa-regular.fa-heart:hover{
    
     transform: scale(1.05);
     cursor: pointer;
+    
 }
 .footerp{
     margin: 7px;
-}
     
+}
+.footerp,.footerh5,i{
+    color: white;
+}
+  
 }
