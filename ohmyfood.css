@@ -202,6 +202,16 @@ main .ville i {
 
      
 }
+.likeicon{
+    
+    background:linear-gradient( #9356DC, #FF79DA); 
+    -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+
+    
+}
+
+
 .fa-regular.fa-heart:hover{
     
     transform: scale(1.05);
@@ -392,6 +402,12 @@ main .ville i {
     margin-top: -50px;
     font-size: 30px;
     
+    
+}
+.fa-regular.fa-heart{
+    
+    background-color:linear-gradient(to top, #9356DC, #FF79DA); 
+    background-clip: text;
     
 }
 .fa-regular.fa-heart:hover{
