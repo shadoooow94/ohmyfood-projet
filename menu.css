@@ -37,13 +37,20 @@ body {
     border-radius: 50px 50px 0px 0px;
     margin-top: -70px;
     position: relative;
-   
+
+    
+
+}
+.fa-heart{
+    margin-right: 100px;
+    
+}
+.fa-heart:hover{
+    background:linear-gradient( #9356DC, #FF79DA); 
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     
     
-
-
-
-
 }
 
 .nomrestaurant h1 {
@@ -56,7 +63,7 @@ body {
 
 }
 
-.nomrestaurant i {
+.nomrestaurant .fas .fa-heart{
 
     margin-right: 100px;
 
@@ -87,9 +94,7 @@ body {
     cursor: pointer; 
     overflow: hidden;
    
-    white-space: nowrap; 
-    text-overflow: ellipsis;
-     
+   
     
 
 }
@@ -100,7 +105,7 @@ body {
   
 }
 .menu:hover .menu_check .fa-circle-check{
-    transform: rotate(0deg);
+    transform: rotate(360deg);
     
 
 }
@@ -122,8 +127,8 @@ body {
    
     
 .fa-circle-check{
-    transform: rotate(360deg);
-    transition: transform 700ms;
+    transform: rotate(0deg);
+    transition: transform 800ms;
 }
 
 .menu_check .fa-solid.fa-circle-check {
@@ -135,7 +140,7 @@ body {
 
 .menuplat{
     width: 310px;
-    
+   
 }
 .menuplat h3,
 p {
@@ -145,10 +150,19 @@ p {
 
 
 }
+.menuplat,p{
+     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+}
 
 .menuplat h3 {
 
     margin-bottom: -12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     
 }
 
@@ -167,18 +181,24 @@ button {
     background-image: linear-gradient(to top, #9356DC, #FF79DA);
     font-size: 20px;
     padding: 15px;
-    margin-left: 120px;
+    margin-left:850px;
     margin-top: 30px;
     box-shadow: 4px 4px 10px rgb(0 0 0 / 25%);
     border: 0;
+    
 
 }
-
+button:hover{
+    transform: scale(1.03);
+    opacity: 0.8;
+    box-shadow: 2px 2px 7px black;
+}
 .footer {
     background-color: #353535;
     color: white;
     padding: 10px;
     margin-top: 50px;
+    
 }
 
 .footerh5 {
@@ -186,11 +206,20 @@ button {
     font-size: 25px;
     margin-top: 0px;
     margin-left: 20px;
+    
 }
 
 .footerp {
-    padding: 0;
+    padding: 0px;
     margin: 20px;
+    color: white;
+    
+    
+}
+
+footer a{
+    text-decoration: none;
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -246,7 +275,9 @@ button {
 
         margin: 20px;
         display: flex;
-        gap: -15px;
+        
+        color: white;
+        
     }
 
     .footer i {
