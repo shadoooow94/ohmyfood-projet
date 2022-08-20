@@ -3,22 +3,25 @@
 
 
 
-*{
+* {
     text-decoration: none;
     color: black;
 }
-a:hover{
+
+a:hover {
     text-decoration: none;
     color: black;
-    
+
 }
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     position: relative;
-    
+
 }
-.loaderpage{
+
+.loaderpage {
     position: absolute;
     background: #f1f1f1;
     width: 100vw;
@@ -30,45 +33,56 @@ body {
     z-index: 9999;
     opacity: 1;
     animation: load 0.2s 3s forwards;
-   
+
 }
 
-  
-.dot{
+
+.dot {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #000;
+    background-color: #000;
     margin: 0 15px;
-    animation: loader infinite 0.3s alternate;   
-    
-}
-.d2{
-    animation-delay: 0.05s;
-}
-.d3{
-    animation-delay: 0.1s;
-}
-@keyframes load{
-0% {
-    opacity: 1;
-     
-}
-100% {
-    opacity: 0;
-   z-index: -20;
-    
-}
+    animation: loader infinite 0.3s alternate;
+
+
 }
 
-@keyframes loader {
-    100%{
-        transform: translateY(-30px);
-        
+.dot.d1 {
+    background-color: #9356DC;
+}
+
+.dot.d2 {
+    animation-delay: 0.05s;
+    background-color: #FF79DA;
+}
+
+.dot.d3 {
+    animation-delay: 0.1s;
+    background-color: #99E2D0;
+}
+
+@keyframes load {
+    0% {
+        opacity: 1;
+
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -20;
+
     }
 }
 
-#logo{
+@keyframes loader {
+    100% {
+        transform: translateY(-30px);
+
+    }
+}
+
+#logo {
     width: 350px;
     margin-top: 15px;
 }
@@ -97,7 +111,7 @@ main .ville {
 
 main .ville i {
     font-size: 22px;
-    color:black;
+    color: black;
 }
 
 .explorer {
@@ -129,7 +143,7 @@ main .ville i {
 }
 
 .explorer h2 {
-    
+
     font-size: 45px;
 
 }
@@ -159,11 +173,13 @@ main .ville i {
     background-color: #f6f6f6;
     box-shadow: 1px 1px 2px lightgrey;
     width: 250px;
-     
+
 }
-.filtres div:hover{
+
+.filtres div:hover {
     background-color: #BBACC0;
 }
+
 .nombres {
     border-radius: 50%;
     background-color: #9356dc;
@@ -176,7 +192,7 @@ main .ville i {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
 }
 
 
@@ -201,26 +217,31 @@ main .ville i {
     padding-right: 5px;
     font-size: 20px;
 }
+
 .ranger {
-    
+
     background-color: #f6f6f6;
     justify-content: flex-start;
 
 }
-.restaurants{
+
+.restaurants {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
-    
+
 }
-.ranger h2{
+
+.ranger h2 {
     margin-left: 70px;
     margin-top: 50px;
     padding-top: 30px;
     font-size: 40px;
 }
-.restaurant-images h3,p{
+
+.restaurant-images h3,
+p {
     margin-left: 10px;
     box-shadow: 0px 0px 0px 0px;
     gap: 100px;
@@ -232,85 +253,96 @@ main .ville i {
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
     height: 250px;
-    
+
 }
-.restaurant-images{
+
+.restaurant-images {
     box-shadow: 5px 4px 10px lightgray;
 }
-.restaurants div{
-    
+
+.restaurants div {
+
     border-radius: 20px;
     margin-bottom: 40px;
     width: 45%;
-    
+
 }
-.new { 
-    
+
+.new {
+
     position: absolute;
-    background-color: #99e2d0 ;
+    background-color: #99e2d0;
     color: #1a8a68;
     border-radius: 5px;
     right: 100px;
     padding: 10px;
-    margin-top: 25px; 
-     
+    margin-top: 25px;
+
 }
-.fas.fa-heart{
-    
+
+.fas.fa-heart {
+
     position: absolute;
     right: 100px;
     margin-top: -70px;
     font-size: 30px;
-    
-   
 
-     
+
+
+
 }
-.likeicon:hover{
-    
-    background:linear-gradient( #9356DC, #FF79DA); 
+
+.likeicon:hover {
+
+    background: linear-gradient(#9356DC, #FF79DA);
     -webkit-text-fill-color: transparent;
-   -webkit-background-clip: text;
-  
+    -webkit-background-clip: text;
 
-   
+
+
 }
 
 
-.fas.fa-heart:hover{
-    
+.fas.fa-heart:hover {
+
     transform: scale(1.05);
     cursor: pointer;
 }
 
 
-.footer{
+.footer {
     background-color: #353535;
-    
+
     padding: 20px;
 }
-.footerh5{
+
+.footerh5 {
     font-family: 'shrikhand', cursive;
     font-size: 25px;
     margin-top: 0px;
     margin-left: 20px;
 }
-.footerp{
+
+.footerp {
     padding: 0;
     margin: 20px;
-    
-    
+
+
 }
-.footerp,.footerh5,.fa-solid.fa-utensils,.fa-solid.fa-handshake-angle{
+
+.footerp,
+.footerh5,
+.fa-solid.fa-utensils,
+.fa-solid.fa-handshake-angle {
     color: white;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     body {
         margin: 0;
         font-family: 'Roboto', sans-serif;
     }
-    
+
     header {
         font-family: 'Shrikhand', cursive;
         text-align: center;
@@ -319,72 +351,74 @@ main .ville i {
         padding-bottom: 1px;
         position: relative;
         font-size: 20px;
-    
-    
+
+
     }
-    #logo{
+
+    #logo {
         width: 50%;
     }
+
     main .ville {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color:#f3f3f3;
+        background-color: #f3f3f3;
         gap: 10px;
-    
+
     }
-    
+
     main .ville i {
         font-size: 22px;
     }
-    
+
     .explorer {
         background-color: #fafafa;
         margin-top: 0;
     }
-    
+
     .explorer button {
         border-radius: 30px;
         border-color: white;
         color: white;
         background-image: linear-gradient(to top, #9356DC, #FF79DA);
-        font-size: 20px; 
+        font-size: 20px;
         margin-bottom: 40px;
         border: 0;
         margin-top: 20px;
-    
-    
+
+
     }
-    
+
     .explorer button:hover {
         transform: scale(1.1);
     }
-    
+
     .explorer h2 {
         margin-top: 0px;
         text-align: center;
         font-size: 25px;
         padding-top: 40px;
     }
-    
+
     .explorer p {
         font-size: 18px;
     }
-    
+
     .listefiltres h2 {
         margin-left: -35px;
         font-size: 30px;
-        
+
     }
-    
+
     .filtres {
         display: flex;
         justify-content: space-around;
         padding-top: 10px;
         flex-wrap: wrap;
-    
+
     }
-    
+
     .filtres div {
         display: flex;
         border-radius: 15px;
@@ -392,16 +426,18 @@ main .ville i {
         box-shadow: 1px 1px 10px lightgray;
         margin-bottom: 20px;
         width: 300px;
-        
+
     }
-    .filtres i:hover{
+
+    .filtres i:hover {
         color: #9356DC;
-        
+
     }
-    .filtres h3{
-        padding-left:  20px;
+
+    .filtres h3 {
+        padding-left: 20px;
     }
-    
+
     .nombres {
         border-radius: 50%;
         background-color: #9356dc;
@@ -411,89 +447,102 @@ main .ville i {
         padding: 8px;
         margin-top: 17px;
     }
-    
-    
-    
+
+
+
     .fa-solid.fa-mobile-screen-button {
         color: darkgray;
-        
+
         font-size: 20px;
-        
+
     }
-    
+
     .fa-solid.fa-list {
         color: darkgray;
         font-size: 20px;
     }
-    
+
     .fa-solid.fa-store {
         color: #9356dc;
-       
+
         font-size: 20px;
     }
-    .fa-solid.fa-store:hover{
+
+    .fa-solid.fa-store:hover {
         color: #9356DC;
     }
-   .ranger h2{
-    margin-left: 25px;
-    font-size: 30px;
-   } 
-.restaurants div{
-    width: 100%;
-    height: 290px;
-    background-color: white;
-   
-    
-}
 
-.restaurants img{
-    height: 200px ;
-    
-}
-.restaurant-images h3,p{
-   
-    margin: 10px;
+    .ranger h2 {
+        margin-left: 25px;
+        font-size: 30px;
+    }
 
-}
-.new { 
-    
-    position: absolute;
-    background-color: #99e2d0 ;
-    color: #1a8a68;
-    border-radius: 5px;
-    right: 50px;
-    padding: 10px;
-    margin-top: 25px; 
-     
-}
-.fas.fa-heart{
-    
-    color: black;
-    right: 68px;
-    margin-top: -50px;
-    font-size: 30px;
-    
-    
-}
-.fas .fa-heart{
-    
-    background:linear-gradient(to top, #9356DC, #FF79DA); 
-    background-clip: text;
-    transition-duration: .55s;
-    
-}
-.fas.fa-heart:hover{
-   
-    transform: scale(1.05);
-    cursor: pointer;
-    
-}
-.footerp{
-    margin: 7px;
-    
-}
-.footerp,.footerh5,i{
-    color: white;
-}
-  
+    .restaurants div {
+        width: 100%;
+        height: 290px;
+        background-color: white;
+
+
+    }
+
+    .restaurants img {
+        height: 200px;
+
+    }
+
+    .restaurant-images h3,
+    p {
+
+        margin: 10px;
+
+    }
+
+    .new {
+
+        position: absolute;
+        background-color: #99e2d0;
+        color: #1a8a68;
+        border-radius: 5px;
+        right: 50px;
+        padding: 10px;
+        margin-top: 25px;
+
+    }
+
+    .fas.fa-heart {
+
+        color: black;
+        right: 68px;
+        margin-top: -50px;
+        font-size: 30px;
+
+
+    }
+
+    .fas .fa-heart {
+
+        background: linear-gradient(to top, #9356DC, #FF79DA);
+        background-clip: text;
+        transition-duration: .55s;
+
+    }
+
+    .fas.fa-heart:hover {
+
+        transform: scale(1.05);
+        cursor: pointer;
+
+    }
+
+    .footerp {
+        margin: 7px;
+
+    }
+
+    .footerp,
+    .footerh5,
+    i {
+        color: white;
+    }
+
 }

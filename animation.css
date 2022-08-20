@@ -1,0 +1,18 @@
+@-webkit-keyframes load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -20;
+  }
+}
+@keyframes load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -20;
+  }
+}/*# sourceMappingURL=animation.css.map */
