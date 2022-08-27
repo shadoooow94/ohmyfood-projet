@@ -12,12 +12,11 @@
 }
 
 #logos {
-    width: 350px;
-    margin-top: 10px;
+    width: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 750px;
+    margin-left: 75px;
     padding: 20px;
 }
 
@@ -38,32 +37,71 @@ body {
     margin-top: -70px;
     position: relative;
 
-    
+
 
 }
-.fa-heart{
-    margin-right: 100px;
-    
+
+
+.fa-solid.fa-heart {
+
+    position: absolute;
+    right: 30px;
+    margin-top: 10px;
+    font-size: 30px;
+
+    opacity: 0;
+    transition-duration: 0.75s;
 }
-.fa-heart:hover{
-    background:linear-gradient( #9356DC, #FF79DA); 
+
+.fa-regular.fa-heart {
+
+    margin-top: 10px;
+    position: absolute;
+    right: 30px;
+    font-size: 30px;
+    opacity: 1;
+    transition-duration: 0.75s;
+
+
+}
+
+
+.fa-solid.fa-heart:hover {
+
+    background: linear-gradient(#9356DC, #FF79DA);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    
-    
+    transform: scale(1.2);
+    opacity: 1;
+
+
 }
 
 .nomrestaurant h1 {
     font-family: Shrikhand, "cursive";
-    margin-left: 100px;
+    margin-left: 10px;
     font-size: 30px;
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
 
 }
+.menu{
+    
+        animation: fadein 3s; 
+        
+       }
+       @keyframes fadein {
+        0% {
+        transform: translateY(-50%);
+        }
+        
+        100% {
+            transform: translateY(0);
+        }
+       }
 
-.nomrestaurant .fas .fa-heart{
+.nomrestaurant .fas .fa-heart {
 
     margin-right: 100px;
 
@@ -71,11 +109,11 @@ body {
 
 .nomrestaurant h4 {
     font-size: 20px;
-    margin-left: 100px;
+    margin-left: 15px;
     font-weight: 400;
     text-transform: uppercase;
     border-bottom: 5px solid #99e2d0;
-    ;
+    
     width: 55px;
     padding-bottom: 10px;
 
@@ -91,42 +129,58 @@ body {
     padding: 5px;
     align-items: center;
     height: 75px;
-    cursor: pointer; 
+    cursor: pointer;
     overflow: hidden;
-   
-   
-    
+    animation: fadein 3s; 
+    transition-duration: 1.5s;
+        
+}
+@keyframes fadein {
+ 0% {
+ transform: translateY(50%);
+ opacity: 0;
+ }
+ 
+ 100% {
+     transform: translateY(0);
+     opacity: 1;
+ }
+}
+
+
+
+
+
+
+.menu:hover .menu_check {
+    margin-right: -6px;
+
 
 }
 
-.menu:hover .menu_check{
-    margin-right:-6px; 
-    
-  
-}
-.menu:hover .menu_check .fa-circle-check{
+.menu:hover .menu_check .fa-circle-check {
     transform: rotate(360deg);
-    
+
 
 }
 
 .menu_check {
     background: #99e2d0;
     cursor: pointer;
-    padding: 50px;
+    padding: 46px;
     margin: -6px;
-    margin-right: -90px;
+    margin-right: -132px;
     border-radius: 0 15px 15px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: margin-right 0.8s;
-    
-    
+
+
 }
-   
-    
-.fa-circle-check{
+
+
+.fa-circle-check {
     transform: rotate(0deg);
     transition: transform 800ms;
 }
@@ -138,23 +192,26 @@ body {
     margin-right: 0px
 }
 
-.menuplat{
+.menuplat {
     width: 310px;
-   
+
 }
+
 .menuplat h3,
 p {
 
     margin-left: 10px;
-    
+
 
 
 }
-.menuplat,p{
-     overflow: hidden;
+
+.menuplat,
+p {
+    overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    
+
 }
 
 .menuplat h3 {
@@ -163,15 +220,15 @@ p {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    
+
 }
 
 .prix {
     font-size: 20px;
     font-weight: bold;
     margin-top: 30px;
-    margin-right:20px;
-   
+    margin-right: 20px;
+
 }
 
 button {
@@ -181,24 +238,26 @@ button {
     background-image: linear-gradient(to top, #9356DC, #FF79DA);
     font-size: 20px;
     padding: 15px;
-    margin-left:850px;
+    margin-left: 120px;
     margin-top: 30px;
     box-shadow: 4px 4px 10px rgb(0 0 0 / 25%);
     border: 0;
-    
+
 
 }
-button:hover{
+
+button:hover {
     transform: scale(1.03);
     opacity: 0.8;
     box-shadow: 2px 2px 7px black;
 }
+
 .footer {
     background-color: #353535;
     color: white;
     padding: 10px;
     margin-top: 50px;
-    
+
 }
 
 .footerh5 {
@@ -206,28 +265,29 @@ button:hover{
     font-size: 25px;
     margin-top: 0px;
     margin-left: 20px;
-    
+
 }
 
 .footerp {
     padding: 0px;
-    margin: 20px;
+    margin: 10px;
     color: white;
-    
-    
+
+
 }
 
-footer a{
+footer a {
     text-decoration: none;
-    
+
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 992px) {
     #logos {
-        margin-left: 80px;
-        width: 200px;
+        margin-left: 800px;
+        width: 250px;
         padding: 20px;
         margin-top: 0px;
+        
 
     }
 
@@ -275,9 +335,9 @@ footer a{
 
         margin: 20px;
         display: flex;
-        
+
         color: white;
-        
+
     }
 
     .footer i {
@@ -287,6 +347,18 @@ footer a{
 
     button {
         width: 220px;
-        margin-left: 95px;
+        margin-left: 850px;
+    }
+}
+@media screen and (min-witdh: 768px) , (max-width: 992px){
+    #logos{
+        padding-left: 200px;
+        width: 30%;
+    }
+    .nomrestaurant h1{
+        padding-left: 50px;
+    }
+    button{
+        margin-left: 300px;
     }
 }

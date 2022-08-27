@@ -25,7 +25,7 @@ body {
     position: absolute;
     background: #f1f1f1;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,22 +44,28 @@ body {
     background-color: #000;
     margin: 0 15px;
     animation: loader infinite 0.3s alternate;
+    
 
 
 }
 
 .dot.d1 {
     background-color: #9356DC;
+    margin-top: -2000px;
 }
 
 .dot.d2 {
     animation-delay: 0.05s;
     background-color: #FF79DA;
+    margin-top: -2000px;
+    
 }
 
 .dot.d3 {
     animation-delay: 0.1s;
     background-color: #99E2D0;
+    margin-top: -2000px;
+
 }
 
 @keyframes load {
@@ -83,7 +89,7 @@ body {
 }
 
 #logo {
-    width: 350px;
+    width: 200px;
     margin-top: 15px;
 }
 
@@ -112,8 +118,14 @@ main .ville {
 main .ville i {
     font-size: 22px;
     color: black;
+    margin-top: -10px
 }
-
+main .ville p{
+    margin-top: 15px;
+    padding-bottom: 10px;
+    margin-left: 0;
+   
+}
 .explorer {
     text-align: center;
     background-color: #fafafa;
@@ -125,9 +137,9 @@ main .ville i {
     border-color: white;
     color: white;
     background-image: linear-gradient(to top, #9356DC, #FF79DA);
-    width: 300px;
-    height: 50px;
-    font-size: 24px;
+    width: 270px;
+    height: 60px;
+    font-size: 20px;
     padding: 11px;
     margin-bottom: 40px;
     border: 0;
@@ -143,18 +155,18 @@ main .ville i {
 }
 
 .explorer h2 {
-
-    font-size: 45px;
+    padding-top: 20px;
+    font-size: px;
 
 }
 
 .explorer p {
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .listefiltres h2 {
-    padding-left: 70px;
-    font-size: 40px;
+    padding-left: 40px;
+    font-size: 30px;
 }
 
 .filtres {
@@ -172,12 +184,17 @@ main .ville i {
     padding: 10px;
     background-color: #f6f6f6;
     box-shadow: 1px 1px 2px lightgrey;
-    width: 250px;
+    width: 310px;
+    border: 0;
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 25%);
+    margin-top: 30px;
 
 }
-
+.filtres h3{
+    margin-left: 20px;
+}
 .filtres div:hover {
-    background-color: #BBACC0;
+    background-color: #D89ED8;
 }
 
 .nombres {
@@ -234,20 +251,22 @@ main .ville i {
 }
 
 .ranger h2 {
-    margin-left: 70px;
+    margin-left: 30px;
     margin-top: 50px;
     padding-top: 30px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .restaurant-images h3,
 p {
-    margin-left: 10px;
+    margin-left: 20px;
     box-shadow: 0px 0px 0px 0px;
     gap: 100px;
 
 }
-
+.restaurant-images h3{
+    margin-bottom: -10px;
+}
 .restaurants img {
     width: 100%;
     object-fit: cover;
@@ -258,13 +277,19 @@ p {
 
 .restaurant-images {
     box-shadow: 5px 4px 10px lightgray;
+    position: relative;
+}
+
+.restaurant-images .far {
+
+    color: linear-gradient(#9356DC, #FF79DA);
 }
 
 .restaurants div {
 
     border-radius: 20px;
     margin-bottom: 40px;
-    width: 45%;
+    width: 100%;
 
 }
 
@@ -274,39 +299,54 @@ p {
     background-color: #99e2d0;
     color: #1a8a68;
     border-radius: 5px;
-    right: 100px;
+    right: 40px;
     padding: 10px;
     margin-top: 25px;
 
 }
 
-.fas.fa-heart {
+.fa-regular.fa-heart {
+
 
     position: absolute;
-    right: 100px;
-    margin-top: -70px;
+    right: 40px;
+    margin-top: -60px;
     font-size: 30px;
-
+    opacity: 1;
 
 
 
 }
 
-.likeicon:hover {
+.fa-solid.fa-heart {
+
+    position: absolute;
+    right: 40px;
+    margin-top: -60px;
+    font-size: 30px;
+    transition-duration: 0.75s;
+    opacity: 0;
+
+}
+
+
+.fa-solid.fa-heart:hover {
 
     background: linear-gradient(#9356DC, #FF79DA);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-
+    transform: scale(1.2);
+    opacity: 1;
 
 
 }
 
 
-.fas.fa-heart:hover {
+.fa-solid.fa-heart {
 
     transform: scale(1.05);
     cursor: pointer;
+
 }
 
 
@@ -325,7 +365,7 @@ p {
 
 .footerp {
     padding: 0;
-    margin: 20px;
+    margin: 10px;
 
 
 }
@@ -337,7 +377,7 @@ p {
     color: white;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 992px) {
     body {
         margin: 0;
         font-family: 'Roboto', sans-serif;
@@ -354,9 +394,28 @@ p {
 
 
     }
+    .dot.d1 {
+        background-color: #9356DC;
+        margin-top: -1500px;}
+    
+    .dot.d2 {
+        animation-delay: 0.05s;
+        background-color: #FF79DA;
+        margin-top: -1500px;
+        
+    }
+    
+    .dot.d3 {
+        animation-delay: 0.1s;
+        background-color: #99E2D0;
+        margin-top: -1500px;
+    
+    }
+    
 
     #logo {
-        width: 50%;
+        width: 15%;
+        
     }
 
     main .ville {
@@ -406,7 +465,7 @@ p {
     }
 
     .listefiltres h2 {
-        margin-left: -35px;
+        margin-left: 20px;
         font-size: 30px;
 
     }
@@ -473,13 +532,13 @@ p {
     }
 
     .ranger h2 {
-        margin-left: 25px;
-        font-size: 30px;
+        margin-left: 35px;
+        font-size: 35px;
     }
 
     .restaurants div {
         width: 100%;
-        height: 290px;
+        height: 300px;
         background-color: white;
 
 
@@ -539,10 +598,12 @@ p {
 
     }
 
-    .footerp,
-    .footerh5,
-    i {
-        color: white;
-    }
 
+
+}
+@media screen and (min-witdh: 768px) , (max-width: 992px) {
+    #logo{
+       
+        width: 30%;
+    }
 }
