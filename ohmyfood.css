@@ -602,9 +602,3 @@ p {
 
 
 }
-@media screen and (min-witdh: 768px) , (max-width: 992px) {
-    #logo{
-       
-        width: 30%;
-    }
-}
